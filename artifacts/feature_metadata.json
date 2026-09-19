@@ -1,0 +1,51 @@
+{
+  "dataset": "heart_disease_clean.csv",
+  "target": "target",
+  "random_state": 42,
+  "test_size": 0.2,
+  "threshold": 0.3900000000000002,
+  "model_name": "Tuned Logistic Regression",
+  "project_final_features": [
+    "thalach",
+    "thal",
+    "cp",
+    "ca",
+    "oldpeak"
+  ],
+  "stable_features": [
+    "ca",
+    "oldpeak",
+    "cp",
+    "thal",
+    "exang",
+    "slope",
+    "sex"
+  ],
+  "feature_engineering": [
+    "age_group",
+    "thalach_age_ratio",
+    "chol_age_ratio",
+    "bp_age_ratio",
+    "oldpeak_thalach_ratio",
+    "exercise_stress_index",
+    "cardio_burden"
+  ],
+  "schema": [
+    "age",
+    "sex",
+    "cp",
+    "trestbps",
+    "chol",
+    "fbs",
+    "restecg",
+    "thalach",
+    "exang",
+    "oldpeak",
+    "slope",
+    "ca",
+    "thal",
+    "target"
+  ],
+  "threshold_tuning": "out-of-fold training probabilities",
+  "deployment_training": "full dataset after final evaluation"
+}
